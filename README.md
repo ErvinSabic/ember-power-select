@@ -6,6 +6,9 @@
 
 # Ember-Power-Select
 
+### ErvinSabic Notes:
+This is basically Ember Power Select. The only difference being that I modified it so that it will accept a component to the `@noMatchesMessageComponent` param. This is for my specific use case. However I would recommend that this gets done everywhere so that devs have the flexability of passing params to their components rather than just the string of where the component resides. 
+
 Ember Power Select is a select component written in Ember with a focus in flexibility and extensibility.
 
 It is designed to work well with the way we build Ember apps, so it plays nicely with promises, ember-concurrency's tasks,
