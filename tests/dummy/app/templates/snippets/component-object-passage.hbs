@@ -1,0 +1,9 @@
+<PowerSelect
+    @selected={{this.destination}}
+    @options={{this.cities}}
+    @onChange={{this.chooseDestination}}
+    @searchEnabled=true
+    @noMatchesMessageComponent={{ component 'no-items' thing="your destination"}}
+    as |name|>
+  {{name}}
+</PowerSelect>

@@ -90,9 +90,16 @@
           <SearchMessage @searchMessage={{this.searchMessage}} @select={{publicAPI}}/>
         {{/let}}
       {{else if this.mustShowNoMessages}}
-        {{#let (component (or @noMatchesMessageComponent "power-select/no-matches-message")) as |NoMatchesMessage|}}
-          <NoMatchesMessage @noMatchesMessage={{this.noMatchesMessage}} @select={{publicAPI}} />
-        {{/let}}
+        {{#if (eq (get-type @noMatchesMessageComponent) "object") }}
+            {{@noMatchesMessageComponent}}
+        {{else}}
+            {{#let (component (or @noMatchesMessageComponent "power-select/no-matches-message")) as |NoMatchesMessage|}}
+              <NoMatchesMessage @noMatchesMessage={{this.noMatchesMessage}} @select={{publicAPI}} />
+            {{/let}}
+        {{/if}}
+
+
+
       {{else}}
         {{#let (component (or @optionsComponent "power-select/options")) as |Options|}}
           <Options

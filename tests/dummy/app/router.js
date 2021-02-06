@@ -25,6 +25,7 @@ Router.map(function() {
 
       // ADVANCED CUSTOMIZATION
       this.route('custom-search-action');
+      this.route('passing-components');
 
       // OTHER
       this.route('test-helpers');

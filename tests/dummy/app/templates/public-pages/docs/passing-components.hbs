@@ -1,0 +1,8 @@
+<h1 class="doc-page-title">Passing Whole Components</h1>
+<p>
+    You have the ability to pass components into params such as <code>@noMatchesMessageComponent</code> that may have additional passed in parameters. You can also do it the classic way by just passing in a string of where the component resides. Here is an example of passing a component in directly.
+</p>
+<CodeExample @hbs="component-object-passage.hbs" @js="component-object-passage-js.js" as |partialName|>
+    {{partial partialName}}
+</CodeExample>
+<h3 class="doc-page-title"></h3>
