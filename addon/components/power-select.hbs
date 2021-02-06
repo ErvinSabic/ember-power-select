@@ -97,9 +97,6 @@
               <NoMatchesMessage @noMatchesMessage={{this.noMatchesMessage}} @select={{publicAPI}} />
             {{/let}}
         {{/if}}
-
-
-
       {{else}}
         {{#let (component (or @optionsComponent "power-select/options")) as |Options|}}
           <Options
